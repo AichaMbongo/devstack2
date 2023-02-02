@@ -1,0 +1,136 @@
+{% extends "master1.html" %}
+
+
+
+
+{% block title %}
+VM provisioning
+{% endblock %}
+
+
+
+{% block content %}
+
+<section>
+
+
+<div class="main-container">
+  <div class="scontainer">
+    <div class="srow">
+      <h4 class="sleft">Create Server</h4>
+      <p class="sright"><b>$1.0753</b>/day</p>
+    </div>
+    <div class="srow separator">
+      <h4 class="sleft">Server details</h4>
+    </div>
+    <form class="sform separator">
+      <div class="sform-group">
+        <label for="server-name">Server name:</label>
+        <input class="input-border" class='sform-group input'  type="text" id="server-name" placeholder="server-09">
+        <i class="icon-help fas fa-question-circle"></i>
+      </div>
+      <div class="sform-group ">
+        <label for="region">Region:</label>
+        <input class="input-border" class='sform-group input' type="text" id="region" placeholder="Nairobi(NBI)">
+        <i class="icon-help fas fa-question-circle"></i>
+      </div>
+    </form>
+  </div>
+  <div class="container2 separator">
+    <div class="scol-1">Virtual Server</div>
+    <div class="scol-2">On Metal<sup>TM</sup>Server</div>
+  </div>
+  <div class="scontainer separator">
+    <div class="srow">
+      <h4 class="sleft">Image</h4>
+       <div class="checkbox-container">
+      <input type="checkbox" id="show-most-popular-image-only">
+      <label for="show-most-popular-image-only"></label>
+      <p class="sright"> Show most popular image only</p>
+    </div>
+    </div>
+  </div>
+
+<div class="s-container separator">
+  <div class="s-side-nav">
+    <a href="#">
+      <i class="fas fa-image"></i>
+      Image type
+    </a>
+    <div class="dropdown dropright">
+      <a href="#" class="dropdown-toggle">
+        <i class="fab fa-linux"></i>
+        Linux applications
+      </a>
+      <div class="dropdown-menu">
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle" style="float:left;"></i>
+            AlmaLinux
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            CentOS
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            Debian
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            Fedora
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            Fortinet
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            Rocky Linux
+          </a>
+        </div>
+        <div class="dropdown dropright">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-circle"></i>
+            Ubuntu
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#">
+      <i class="fab fa-windows"></i>
+      Windows
+    </a>
+    <a href="#">
+      <i class="fas fa-save"></i>
+      Saved
+    </a>
+  </div>
+  <div class="s-top-nav">
+    <a href="#">
+      <i class="fas fa-laptop"></i>
+      Operating System
+    </a>
+    <a href="#">
+      <i class="fas fa-code-branch"></i>
+      Version
+    </a>
+  </div>
+</div>
+
+
+</section>
+
+
+
+{% endblock %}

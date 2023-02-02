@@ -1,0 +1,184 @@
+{% extends "master.html" %}
+
+
+
+
+{% block title %}
+verification
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Create password</h2>
+        <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+<!--        <button class="user_unregistered-signup" id="signup-button">Sign up</button>-->
+      </div>
+
+
+    <div class="user_options-registered">
+        <h2 class="user_registered-title">Account Set-up</h2>
+        <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+      </div>
+    </div>
+
+
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">New Password</h2>
+        <form class="forms_form" action="{% url 'members:target_page' %}" method="post">
+            {% csrf_token %}
+
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="password" placeholder="Password" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Retype password" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+<!--            <button type="button" class="forms_buttons-forgot">Forgot password?</button>-->
+<!--            <input type="submit" value="Log In" class="forms_buttons-action">-->
+<!--            <button class="user_registered-login" id="login-button">Sign Up</button>-->
+            <button  class="button" id="signup-button">Sign up</button>
+
+          </div>
+        </form>
+       </div>
+      <div class="user_forms-signup" >
+        <h2 class="forms_title">Set up your account</h2>
+
+
+        <form class="forms_form" action="{% url 'members:credentials' %}" method="post">
+            {% csrf_token %}
+
+           <div id="">
+             <fieldset class="forms_fieldset">
+
+               <div class="form-group">
+            <div class="forms_field">
+              <input type="text" placeholder="Phone Number" class="forms_field-input"  />
+            </div>
+                   </div>
+
+
+            <div class="form-group">
+             <div class="forms_field">
+              <input type="text" placeholder="Country" class="forms_field-input" />
+            </div>
+                </div>
+
+
+              <div class="form-group">
+            <div class="forms_field">
+              <input type="text" placeholder="Address" class="forms_field-input" />
+            </div>
+              </div>
+
+                <div class="form-group">
+            <div class="forms_field">
+              <input type="text" id="account" placeholder="Acount Type" class="forms_field-input" />
+            </div>
+            </div>
+
+                  <div class="form-group">
+            <div class="forms_field">
+              <input type="text" id="city/county" placeholder="City/County" class="forms_field-input" />
+            </div>
+  </div>
+
+                    <div class="form-group">
+            <div class="forms_field">
+              <input type="text" id="postal" placeholder="Postal Code" class="forms_field-input" />
+            </div>
+
+  </div>
+          </fieldset>
+
+<div class="form-group">
+  <div style="display: inline-block; !important;">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="Clabel">I have read and understood the Terms and Conditions</label>
+  </div>
+</div>
+
+             <div class="form-group">
+
+<!--            <input type="submit" value="Sign up" class="forms_buttons-action">-->
+
+            <!-- Button trigger modal -->
+<button type="button" id="button" data-toggle="modal" data-target="#myModal">
+  Next
+</button>
+
+
+
+</div>
+
+          <!-- Trigger/Open The Modal -->
+<!-- Button trigger modal -->
+
+
+
+
+
+
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<div class="modal" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Billing Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+<form class="forms_form" action="{% url 'members:credentials' %}" method="post">
+  {% csrf_token %}
+
+
+      <input type="text" class="modal-field"  name="card number" placeholder="Verification Code" >
+             <input type="Date" class="modal-field"  name="expiry date" required>
+
+               <div style="text-align:center; color:black" class="modal-field">
+                   or<br><br>
+                   Pay with M-pesa
+               </div>
+    <div>
+        <input type="Text" class="modal-field" name="Phone number" placeholder="Phone Number" >
+    </div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+<div>
+                 <input type="submit" id="modalInput" value="Submit">
+
+             </div>
+<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+        </form>
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+

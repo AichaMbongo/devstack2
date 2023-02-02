@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'server.css' %}">
+<link href="https://fonts.cdnfonts.com/css/monarda" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+ <html xmlns="http://www.w3.org/1999/html">
+
+
+
+
+
+
+
+
+<style>
+
+.main-navbar__container, .nav-container {
+  margin: 0;
+  padding: 0;
+}
+body{
+ background-image: url("https://i.pinimg.com/736x/ac/d1/eb/acd1ebb864c877bcf8a554d3c87ce4ec.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+ body {
+
+            opacity: 0;
+
+            transition: opacity 1s;
+        }
+
+</style>
+<body onload="document.body.style.opacity='1'">
+<!--          <div class="logo" ><h1><a style="color:white;" href="/">FL<i class="fab fa-dropbox" style="color:white;padding:0px;z-index:1000000;font-size:5 px; "></i>RA</a></h1></div>-->
+
+
+<header class="main-navbar" style=" ; z-index: 10;  margin: 0 !important;position:fixed; top:0; width:100%;">
+  <div class="main-navbar__container"style="margin: 0 !important; z-index: 10;background-color: black ;">
+    <div class="navbar-mobile"  style="margin: 0">
+
+         <div class="logo" ><h1><a style="color:white;" ></a></h1><a></a></a>
+<ul class="menu">
+             <li class="dropdown"><a href="/">FL<i class="fab fa-dropbox" style="color:white;padding:0px;z-index:1000000;font-size:5 px; "></i>RAˇ</a>
+                <ul>
+                  <li><a href="#">Ilustrador</a></li>
+                  <li><a href="#">Webnovel</a></li>
+                </ul>
+              </li>
+</ul>
+
+
+</div>
+
+      <div class="nav-btn">
+        <span class="btn-back d-none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg></span>
+        <a aria-label="Mobile menu" class="btn-toggle"><span></span><span class="mrg"></span><span class="mrg"></span></a>
+      </div>
+    </div>
+      <nav class="navbar-toggle">
+        <ul class="navbar-toggle__inner">
+          <li><a href="">Tickets</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Billing</a></li>
+            <li><a href="">Account</a></li>
+
+
+
+        </ul>
+
+
+
+<!--          <div class="collapse navbar-collapse">-->
+            <ul class="nav-container" style="margin-top: 10px;" >
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong  style=" color:white;">Kanha Sahu</strong>
+                        <span class="glyphicon glyphicon-chevron-down" ></span>
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8" >
+                                        <p class="text-left" ><strong >Kanha Sahu</strong></p>
+                                        <p class="text-left small">info@kaslab.in</p>
+                                        <p class="text-left">
+                                            <a href="#" class="btn btn-primary btn-block btn-sm"  >Profile</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="#credentials"  class="btn btn-danger btn-block"><span class="glyphicon glyphicon-log-out" ></span>&nbsp; Signout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+      </nav>
+  </div>
+
+
+
+<!--////////second nav-->
+<div class="nav-container" style="margin:0px;  z-index: 5; background-color: transparent">
+              <div>
+              <label class="responsive_menu" for="responsive_menu">
+              <span>Menu</span>
+              </label>
+              <input id="responsive_menu" type="checkbox" />
+              <ul class="menu">
+              <li><a href="#">Dashboard</a></li>
+              <li class="dropdown"><a href="#">Servers ˇ</a>
+                <ul>
+                  <li><a href="#">Cancelados</a></li>
+                  <li><a href="#">Concluidos</a></li>
+                  <li><a href="#">Lançamentos</a></li>
+                  <li><a href="#">Pausados</a></li>
+
+                </ul>
+              </li>
+
+                  <li class="dropdown"><a href="#">Orchestration ˇ</a>
+                <ul>
+                  <li><a href="#">Cancelados</a></li>
+                  <li><a href="#">Concluidos</a></li>
+                  <li><a href="#">Lançamentos</a></li>
+                  <li><a href="#">Pausados</a></li>
+
+                </ul>
+              </li>
+
+
+              <li class="dropdown"><a href="#">Networkingˇ</a>
+                <ul>
+                  <li><a href="#">Ilustrador</a></li>
+                  <li><a href="#">Webnovel</a></li>
+                </ul>
+              </li>
+
+                  <li class="dropdown"><a href="#">Storageˇ</a>
+                <ul>
+                  <li><a href="#">Ilustrador</a></li>
+                  <li><a href="#">Webnovel</a></li>
+                </ul>
+              </li>
+
+                  <li class="dropdown"><a href="#">Databasesˇ</a>
+                <ul>
+                  <li><a href="#">Ilustrador</a></li>
+                  <li><a href="#">Webnovel</a></li>
+                </ul>
+              </li>
+
+                  <li class="dropdown"><a href="#">Backupsˇ</a>
+                <ul>
+                  <li><a href="#">Ilustrador</a></li>
+                  <li><a href="#">Webnovel</a></li>
+                </ul>
+              </li>
+
+<!--              <li><a href="#">FaNart</a></li>-->
+<!--              <li><a href="#">Publique</a></li>-->
+<!--              <li><a href="#">Games</a></li>-->
+
+          </ul>
+        </div>
+      </div>
+</header>
+
+
+{% block content %}
+
+<!--Content-->
+
+{% endblock %}
+
+<script src="{% static 'jscript.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+</body>
+</html>
+
