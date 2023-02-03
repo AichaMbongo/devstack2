@@ -884,7 +884,7 @@ input[type="checkbox"]:checked + label:before {
 .s-side-nav a {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  min-width: 200px;
   height:20%;
   padding: 15px;
   color: black;
@@ -895,7 +895,7 @@ input[type="checkbox"]:checked + label:before {
 .s-top-nav {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  min-width: 70%;
   height: 23%;
     background: linear-gradient(to bottom, #ffffcc 0%, #ffffff 100%);
     border: 0.1px solid gray;
@@ -907,7 +907,7 @@ input[type="checkbox"]:checked + label:before {
   width: 50%;
   text-align: center;
   color: black;
-   padding: 11px;
+   padding: 15px;
 
 }
 

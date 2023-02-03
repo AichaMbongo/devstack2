@@ -1,14 +1,5 @@
 {% extends "master1.html" %}
-
-
-
-
-{% block title %}
-VM provisioning
-{% endblock %}
-
-
-
+{% block title %} VM provisioning {% endblock %}
 {% block content %}
 
 <section>
@@ -53,81 +44,97 @@ VM provisioning
 
         <div class="s-container separator">
             <div class="s-side-nav">
-                <a href="#">
-      <i class="fas fa-image">Image type</i>
+                <div class="dropdown dropright">
+                    <a href="#">
+                     <i class="fas fa-image">Image Type</i>
+                    </a>
+                </div>
 
-    </a>
                 <div class="dropdown dropright">
                     <a href="#" class="dropdown-toggle">
-        <i class="fab fa-linux">Linux applications</i>
-
-      </a>
+                    <i class="fab fa-linux">Linux applications</i>
+                        </a>
                     <div class="dropdown-menu">
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle" style="float:left;"> AlmaLi</i>
-
-          </a>
+                             <i class="fas fa-circle" style="float:left;"> AlmaLi</i>
+                                </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">CentOS</i>
-
-          </a>
+                            <i class="fas fa-circle">CentOS</i>
+                            </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">Debian</i>
-
-          </a>
+                              <i class="fas fa-circle">Debian</i>
+                            </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">  Fedora</i>
-
-          </a>
+                              <i class="fas fa-circle">  Fedora</i>
+                            </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">Fortinet</i>
-
-          </a>
+                              <i class="fas fa-circle">Fortinet</i>
+                            </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">Rocky Linux</i>
-
-          </a>
+                              <i class="fas fa-circle">Rocky Linux</i>
+                            </a>
                         </div>
                         <div class="dropdown dropright">
                             <a href="#" class="dropdown-item">
-            <i class="fas fa-circle">Ubuntu</i>
-
-          </a>
+                              <i class="fas fa-circle">Ubuntu</i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <a href="#">
-      <i class="fab fa-windows">Windows</i>
+                <div class="dropdown dropright">
+                    <a href="#" class="dropdown-toggle">
+                      <i class="fab fa-windows">Windows</i>
+                    </a>
+                                    <div class="dropdown-menu">
+                        <!-- Windows dropdown items -->
+                    </div>
+                </div>
 
-    </a>
-                <a href="#">
-      <i class="fas fa-save"> Saved</i>
 
-    </a>
+                <div class="dropdown dropright">
+                    <a href="#" class="dropdown-toggle">
+                      <i class="fas fa-save">Saved</i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <!-- Saved dropdown items -->
+                    </div>
+                </div>
+
             </div>
+
+
+
             <div class="s-top-nav">
-                <a href="#">
-      <i class="fas fa-laptop">Operating System</i>
-
-    </a>
-                <a href="#">
-      <i class="fas fa-code-branch">Version</i>
-
-    </a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                          <i class="fas fa-laptop">Operating System</i>
+                        </a>
+                    <div class="dropdown-menu">
+                        <!-- Operating System dropdown items -->
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                          <i class="fas fa-code-branch">Version</i>
+                        </a>
+                    <div class="dropdown-menu">
+                        <!-- Version dropdown items -->
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
 
 </section>
 
