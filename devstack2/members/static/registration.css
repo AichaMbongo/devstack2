@@ -658,6 +658,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
+
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -675,7 +676,7 @@ input[type="checkbox"] {
   #Clabel {
     font-size: 14px;
     margin-left: 10px;
-
+ background-color: #1a8cff;
   }
 
 

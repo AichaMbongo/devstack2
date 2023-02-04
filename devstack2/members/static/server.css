@@ -737,7 +737,8 @@ ul {
 
 }
 .icon-size{
-    font-size: 55px;
+    font-size: 40px;
+
     color: black;
     margin-top:20px;
 }
@@ -959,7 +960,7 @@ overflow: hidden;
 
 .dropdown:hover .dropdown-menu {
   display: block;
-    background-color: transparent;
+    background-color: white;
 }
 
 .dropdown.dropdown-menu {
