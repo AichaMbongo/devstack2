@@ -953,12 +953,13 @@ overflow: hidden;
 }
 
 .dropdown-item:hover {
-  background-color: #f1f1f1;
+  background-color: #b3d9ff;
   width: 100%;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
+    background-color: transparent;
 }
 
 .dropdown.dropdown-menu {
